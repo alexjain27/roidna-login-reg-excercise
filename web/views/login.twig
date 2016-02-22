@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+      <div class="row marketing">
+        <div class="col-lg-6">
+        <div class="error">
+        {{ error_message }}
+        </div>
+<form action="/api-login" method="post"> 
+  <fieldset class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+    <small class="text-muted"></small>
+  </fieldset>      
+  <fieldset class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>   
+</div>
+</div>
+</div>
+
+{% endblock %}

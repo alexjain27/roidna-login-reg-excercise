@@ -1,6 +1,46 @@
 {% extends "layout.html" %}
 
 {% block content %}
-Register
+<div class="container">
+      <div class="row marketing">
+        <div class="col-lg-6">
+<form action="/api-register" method="post">
+  <fieldset class="form-group">
+    <label for="givenName">First Name</label>
+    <input type="text" class="form-control" id="givenName" name="givenName" placeholder="First" required>
+    <small class="text-muted"></small>
+  </fieldset>  
+  <fieldset class="form-group">
+    <label for="surname">Last Name</label>
+    <input type="text" class="form-control" id="surname" name="surname" placeholder="Last" required>
+    <small class="text-muted"></small>
+  </fieldset>    
+  <fieldset class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+    <small class="text-muted"></small>
+  </fieldset>      
+  <fieldset class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="password2">Repeat Password</label>
+    <input type="password" class="form-control" id="password2" name="password2" placeholder="Password"
+      data-validation-match-match="password" 
+      data-validation-match-message="Must match password entered above"
+      required
+    >
+  </fieldset>  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>   
+</div>
+</div>
+</div>
 
 {% endblock %}
