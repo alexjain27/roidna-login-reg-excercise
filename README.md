@@ -1,8 +1,26 @@
-# php-getting-started
+#Test: Simple login web app
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
+#Back end:​​
+Preferred stack: PHP 
+Another option: Node.js
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+#Front end:
+Stack: HTML/CSS/Javascript
+
+#Brief:
+Create a registration/login logic with reset password
+Registration should include confirmation email
+Login should have an option to login through Facebook and Twitter as well
+Send out welcome email (after completed registration) using Mandril
+
+#Bonus:
+Use CSS3 animations on the front-end to make the login form more fancy
+
+## Local
+
+Download this repo and point a virtual host or the local host to the web folder.
+
+
 
 ## Deploying
 
