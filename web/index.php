@@ -1,7 +1,8 @@
 <?php
 
 require('../vendor/autoload.php');
-Stormpath\Client::$apiKeyFileLocation = '/Users/alex/Projects/php-getting-started/.stormpath/apiKey.properties';
+
+Stormpath\Client::$apiKeyFileLocation = '../.stormpath/apiKey.properties';
 $client = Stormpath\Client::getInstance();
 
 $app = new Silex\Application();
